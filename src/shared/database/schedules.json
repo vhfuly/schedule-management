@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "userId": "1",
+    "type": "SpecificDay",
+    "day": "25-01-2018",
+    "intervals": [
+      {
+        "start": "14:30",
+        "end": "15:00"
+      },
+      {
+        "start": "15:10",
+        "end": "15:30"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "userId": "1",
+    "type": "SpecificDay",
+    "day": "25-01-2018",
+    "intervals": [
+      {
+        "start": "14:30",
+        "end": "15:00"
+      },
+      {
+        "start": "15:10",
+        "end": "15:30"
+      }
+    ]
+  }
+]
