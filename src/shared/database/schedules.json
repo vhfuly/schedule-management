@@ -1,9 +1,19 @@
 [
   {
-    "id": "1",
-    "userId": "1",
+    "id": "627fc8e4-6c6b-4643-a36a-3b6d64439536",
     "type": "SpecificDay",
-    "day": "25-01-2018",
+    "day": "11-02-2022",
+    "intervals": [
+      {
+        "start": "09:30",
+        "end": "10:30"
+      }
+    ]
+  },
+  {
+    "id": "a37e916e-8cb9-481e-855f-ae09eece4fe4",
+    "type": "Weekly",
+    "daysOfTheWeek": "Sunday",
     "intervals": [
       {
         "start": "14:30",
@@ -14,20 +24,16 @@
         "end": "15:30"
       }
     ]
-  },
+  }
+
+  ,
   {
-    "id": "2",
-    "userId": "1",
-    "type": "SpecificDay",
-    "day": "25-01-2018",
+    "id": "a37e916e-8cb9-481e-855f-ae09eece4fe4",
+    "type": "Daily",
     "intervals": [
       {
-        "start": "14:30",
-        "end": "15:00"
-      },
-      {
-        "start": "15:10",
-        "end": "15:30"
+        "start": "18:30",
+        "end": "19:00"
       }
     ]
   }
