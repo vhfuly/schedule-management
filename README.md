@@ -30,6 +30,8 @@ To execute it is very simple
 
 ## Examples
 
+A Collection was created in Postman to verify the endpoints. You can access it by <a href='https://www.postman.com/collections/9386de7ae308910647c2'>clicking here </a>
+
  1 - To register a rule:
 
   The api has three types of registers:
