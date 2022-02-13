@@ -13,7 +13,9 @@
   {
     "id": "a37e916e-8cb9-481e-855f-ae09eece4fe4",
     "type": "Weekly",
-    "daysOfTheWeek": "Sunday",
+    "daysOfTheWeek": [
+      "Sunday"
+    ],
     "intervals": [
       {
         "start": "14:30",
@@ -24,9 +26,7 @@
         "end": "15:30"
       }
     ]
-  }
-
-  ,
+  },
   {
     "id": "a37e916e-8cb9-481e-855f-ae09eece4fe4",
     "type": "Daily",

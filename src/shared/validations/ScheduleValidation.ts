@@ -17,7 +17,13 @@ const  scheduleValidation = {
           }
           break;
         case 'Weekly':
-         if(daysOfTheWeek ? !DaysOfTheWeekEnum[daysOfTheWeek] : true) {
+          if(daysOfTheWeek){
+            for (const dayOfTheWeek of daysOfTheWeek) {
+              if(dayOfTheWeek ? !DaysOfTheWeekEnum[dayOfTheWeek] : true) {
+                throw new AppError(`${dayOfTheWeek} is not a valid day`);
+               }
+            }
+          } else {
             throw new AppError('The daysOfTheWeek must be specified');
           }
           break;

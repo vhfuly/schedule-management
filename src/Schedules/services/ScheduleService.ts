@@ -5,13 +5,14 @@ import { DayAndDayOfTheWeek, DaysOfTheWeek, Intervals, Schedule, Type } from '..
 import { readJson, writeJson } from '../../shared/database/ManipulateJson';
 import { AppError } from '../../shared/errors/AppError';
 import { ScheduleAvailable } from '../interfaces/ScheduleAvailable';
+import { DaysOfTheWeekEnum } from '../../shared/enums/days-of-the-week.enum';
 
 class ScheduleService {
   addNewSchedule(
       type: Type,
       intervals: Intervals[],
       day?: string,
-      daysOfTheWeek?: DaysOfTheWeek
+      daysOfTheWeek?: DaysOfTheWeek[]
     ): Schedule {
      const scheduleType = {
       SpecificDay: { id: uuidv4(), type, day, intervals },
@@ -68,7 +69,7 @@ class ScheduleService {
   getIntervalByType(schedule:Schedule, date: DayAndDayOfTheWeek): Intervals[] | undefined {
     const scheduleType = {
       SpecificDay: date.day === schedule.day ? schedule.intervals : undefined,
-      Weekly:  schedule.daysOfTheWeek?.includes(date.daysOfTheWeek) ? schedule.intervals : undefined,
+      Weekly:  schedule.daysOfTheWeek?.includes(date.daysOfTheWeek as DaysOfTheWeek) ? schedule.intervals : undefined,
       Daily:  schedule.intervals,
     }
     return scheduleType[schedule.type]

@@ -10,7 +10,6 @@ class ScheduleAvailableController {
     const { startDay, endDay } = request.body
     try {
       const scheduleAvailable = scheduleService.getScheduleByDay(startDay, endDay)
-      console.log(scheduleAvailable)
       response.json(scheduleAvailable)
     } catch (error) {
       next(error)

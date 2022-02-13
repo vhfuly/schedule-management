@@ -11,7 +11,7 @@ export interface Schedule {
   id: string;
   type: Type;
   day?: string;
-  daysOfTheWeek?: DaysOfTheWeek;
+  daysOfTheWeek?: DaysOfTheWeek[];
   intervals: Intervals[];
 }
 
