@@ -103,7 +103,7 @@ To execute it is very simple
 
   2 -  Delete a rule:
 
-  inform id in param, in uuid v4 format
+  Inform id in param, in uuid v4 format
 
     URL : http://localhost:3333/v1/api/schedules/:id
 
